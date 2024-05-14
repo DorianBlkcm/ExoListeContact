@@ -34,8 +34,9 @@ namespace ExoListeContact
             Console.WriteLine("Téléphone");
             newContact.PhoneNumber = Console.ReadLine();
 
+            contacts.Add(newContact);
+
             Console.WriteLine("Contact créer, l'id est : "+ id);
-            return;
 
         }
 
@@ -46,7 +47,7 @@ namespace ExoListeContact
             int idUser = int.Parse(Console.ReadLine());
 
 
-            Contact contact = contacts.Find(user => user.Id == id);
+            Contact contact = contacts.Find(user => user.Id == idUser);
             if (contact != null)
             {
                 Console.WriteLine("Entrez le nouveau nom de votre contact");
