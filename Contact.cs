@@ -13,6 +13,9 @@ namespace ExoListeContact
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-
+        public override string ToString()
+        {
+            return $"ID: {Id}, Nom: {Name}, Prénom: {LastName}, Téléphone: {PhoneNumber}, Email: {Email}";
+        }
     }
 }
