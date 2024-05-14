@@ -12,8 +12,7 @@ namespace ExoListeContact
     {
         List<Contact> contacts = new List<Contact>();
         private int id = 1;
-
-        //AJOUTER D'UN CONTACT PAR L'UTILISATEUR A PARTIR DE LA CONSOLE
+        
         public void AddContact()
         {
             Contact newContact = new Contact()
